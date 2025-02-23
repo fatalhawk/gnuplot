@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Harlow Malloc">
+<meta name="author" content="Mayank Choudhary - Krina Pagadhar - Nakshatra Lad">
 <meta name="dcterms.date" content="2025-02-22">
 
-<title>Post With Code – gnuplot</title>
+<title>Gnuplot - A command-line plotting software – ES114 J014</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -81,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">gnuplot</span>
+    <span class="navbar-title">ES114 J014</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -95,12 +129,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://github.com/fatalhawk/gnuplot"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -115,9 +144,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Post With Code</h1>
+      <h1 class="title">Gnuplot - A command-line plotting software</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
+                <div class="quarto-category">info</div>
                 <div class="quarto-category">code</div>
                 <div class="quarto-category">analysis</div>
               </div>
@@ -130,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Harlow Malloc </p>
+               <p>Mayank Choudhary - Krina Pagadhar - Nakshatra Lad </p>
             </div>
     </div>
       
@@ -156,9 +185,490 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>This is a post with executable code.</p>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<section id="what-is-gnu-plot" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-gnu-plot">What is GNU Plot?</h3>
+<p>Gnu plot is a portable, free, command-driven, interactive function, and data plotting program for Linux, OS/2, MS Windows, OSX, VMS, and many other platforms. Although copyrighted, the source code is freely available. It was initially developed to enable researchers and students to interactively visualize mathematical functions and data, but it has since expanded to cover a wide range of non-interactive purposes, including web scripting.</p>
+<p>Third-party programs like Octave also use it as a plotting engine. Numerous plot types are supported by Gnu plot in both 2D and 3D. It can draw utilizing a variety of associated text as well as lines, points, boxes, contours, vector fields, and surfaces. Additionally, it supports a number of specialty plot kinds. Gnu plot provides output in a variety of file formats like eps, emf, fig, jpeg, LaTeX, pdf, png, postscript, etc.</p>
+</section>
+<section id="why-use-gnu-plot" class="level3">
+<h3 class="anchored" data-anchor-id="why-use-gnu-plot">Why use GNU Plot?</h3>
+<ul>
+<li><strong>Cross-Platform Compatibility</strong>: Works on Windows, macOS, and Linux.<br>
+</li>
+<li><strong>Supports Various Data Formats</strong>: Can read data from files, functions, or mathematical expressions.<br>
+</li>
+<li><strong>Multiple Plot Types</strong>: Line graphs, scatter plots, histograms, 3D plots, and more.<br>
+</li>
+<li><strong>Customizable Output</strong>: Modify colors, labels, titles, and grid settings easily.<br>
+</li>
+<li><strong>Integration with Other Tools</strong>: Can be used with Python, MATLAB, LaTeX, and other programming languages.</li>
+</ul>
+</section>
+<section id="who-uses-gnu-plot" class="level3">
+<h3 class="anchored" data-anchor-id="who-uses-gnu-plot">Who Uses GNU Plot?</h3>
+<ul>
+<li><strong>Scientists and Researchers</strong>: To graph experimental data.<br>
+</li>
+<li><strong>Engineers</strong>: To plot equations and model design.<br>
+</li>
+<li><strong>Students</strong>: As an educational tool for graphing mathematics.<br>
+</li>
+<li><strong>Data Analysts</strong>: To investigate trends and relationships within datasets.</li>
+</ul>
+</section>
+</section>
+<section id="installation-setup" class="level1">
+<h1>Installation &amp; Setup</h1>
+<section id="windows" class="level3">
+<h3 class="anchored" data-anchor-id="windows">Windows</h3>
+<ol type="1">
+<li>Download Gnuplot from the <a href="http://www.gnuplot.info/">official website</a>.</li>
+<li>Run the installer and follow the on-screen instructions.</li>
+<li><em>(Optional)</em> Add Gnuplot to the system PATH for command-line access.</li>
+</ol>
+</section>
+<section id="linux" class="level3">
+<h3 class="anchored" data-anchor-id="linux">Linux</h3>
+<ol type="1">
+<li>Open the terminal and use the package manager:</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update <span class="kw">&amp;&amp;</span> <span class="fu">sudo</span> apt install gnuplot  <span class="co">#Ubunty/Debian</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> gnf install gnuplot                     <span class="co">#Fedora</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> pacman <span class="at">-S</span> gnuplot                       <span class="co">#Arch Linux</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li>Verify installation by running:</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">gnuplot</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="macos" class="level3">
+<h3 class="anchored" data-anchor-id="macos">macOS</h3>
+<ol type="1">
+<li>Install via Homebrew:</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install gnuplot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li>Verify the installation</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">gnuplot</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="key-features-of-gnuplot" class="level1">
+<h1>Key Features of Gnuplot</h1>
+<p>Gnuplot is a powerful, command-driven, and open-source plotting utility used for data visualization in scientific and engineering applications. It supports a wide range of graph types and customization options, making it a preferred tool for researchers, engineers, and data analysts. Below are the key features of Gnuplot.</p>
+<section id="multi-platform-support" class="level3">
+<h3 class="anchored" data-anchor-id="multi-platform-support">1. Multi-Platform Support</h3>
+<p>Gnuplot is compatible with multiple operating systems, including Windows, Linux, and macOS. It can be used as a standalone application or integrated with other software like LaTeX, Python, and MATLAB. Thus, users can work on different systems without worrying about compatibility issues.</p>
+</section>
+<section id="wide-range-of-plot-types" class="level3">
+<h3 class="anchored" data-anchor-id="wide-range-of-plot-types">2. Wide Range of Plot Types</h3>
+<p>It supports 2D and 3D plots, including line graphs, scatter plots, bar charts, contour plots, histograms, and heat maps. It also enables parametric and polar plotting for specialized use cases. This allows users to visualize data in various forms to extract meaningful insights.</p>
+</section>
+<section id="interactive-and-script-based-functionality" class="level3">
+<h3 class="anchored" data-anchor-id="interactive-and-script-based-functionality">3. Interactive and Script-Based Functionality</h3>
+<p>Gnuplot provides an interactive mode for quick visualization. Users can create script files (<code>.plt</code>) to automate plotting, ensuring reproducibility. This feature enhances efficiency, especially when working with large datasets or repetitive tasks.</p>
+</section>
+<section id="customization-and-styling" class="level3">
+<h3 class="anchored" data-anchor-id="customization-and-styling">4. Customization and Styling</h3>
+<p>It offers extensive options for modifying axes, labels, legends, colors, line styles, and point markers. It also allows adding annotations, arrows, and text for better clarity. Users can tailor plots to meet publication standards and presentation needs.</p>
+</section>
+<section id="multiple-output-formats" class="level3">
+<h3 class="anchored" data-anchor-id="multiple-output-formats">5. Multiple Output Formats</h3>
+<p>Gnuplot provides output in a variety of file formats like EPS, EMF, FIG, JPEG, LaTeX, PDF, PNG, and PostScript. The plots obtained can be directly embedded into reports, presentations, and research papers. This ensures flexibility in exporting and sharing visualizations across different platforms.</p>
+</section>
+<section id="mathematical-and-statistical-capabilities" class="level3">
+<h3 class="anchored" data-anchor-id="mathematical-and-statistical-capabilities">6. Mathematical and Statistical Capabilities</h3>
+<p>It supports mathematical functions like trigonometry, logarithms, and exponentials and can handle complex mathematical expressions, curve fitting, and statistical analysis. Users can perform analytical calculations and visualize results without switching between tools.</p>
+</section>
+<section id="data-handling-and-importing" class="level3">
+<h3 class="anchored" data-anchor-id="data-handling-and-importing">7. Data Handling and Importing</h3>
+<p>One can read data from text files, CSV files, and external databases. It allows real-time data streaming and updates, enabling efficient processing of large datasets for real-time or batch visualization.</p>
+</section>
+<section id="d-plotting-and-surface-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="d-plotting-and-surface-visualization">8. 3D Plotting and Surface Visualization</h3>
+<p>It provides features like mesh plots, contour maps, and wireframe models, which support rotation and zooming for better perspective. This is essential for scientific and engineering applications where 3D representation is necessary.</p>
+</section>
+<section id="scripting-and-automation" class="level3">
+<h3 class="anchored" data-anchor-id="scripting-and-automation">9. Scripting and Automation</h3>
+<p>It can be integrated with programming languages like Python (via <code>Gnuplot.py</code>), C, and Perl. It supports batch processing for automated graph generation. This enhances productivity and streamlines workflow in data analysis and visualization projects.</p>
+</section>
+<section id="open-source-and-community-support" class="level3">
+<h3 class="anchored" data-anchor-id="open-source-and-community-support">10. Open-Source and Community Support</h3>
+<p>Being open-source, it is freely available and constantly updated by the community. Extensive documentation and active user forums provide support for troubleshooting. Users benefit from a cost-effective solution with a strong knowledge base.</p>
+</section>
+</section>
+<section id="code-examples" class="level1">
+<h1>Code Examples</h1>
+<section id="basic-2-d-graph" class="level3">
+<h3 class="anchored" data-anchor-id="basic-2-d-graph">Basic 2-D graph</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> title <span class="st">"Sine and Cosine Waves"</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> xlabel <span class="st">"x-axis"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> ylabel <span class="st">"y-axis"</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> grid</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="ex">plot</span> sin<span class="er">(</span><span class="ex">x</span><span class="kw">)</span> <span class="ex">with</span> lines title <span class="st">"sin(x)"</span>, cos<span class="er">(</span><span class="ex">x</span><span class="kw">)</span> <span class="ex">with</span> lines title <span class="st">"cos(x)"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-elephants" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-elephants-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-elephants" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-surus" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-surus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="basic_2d.jpg" class="img-fluid figure-img" data-ref-parent="fig-elephants">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-surus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Command
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><img src="basic_2d_plot.jpg" class="img-fluid figure-img">{fig-hanno}</p>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elephants-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: A Gnuplot of Sine and Cosine waves
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="d-surface-plot" class="level3">
+<h3 class="anchored" data-anchor-id="d-surface-plot">3d Surface Plot</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> title <span class="st">"3D Sine-Cosine Surface"</span> font <span class="st">",14"</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> xlabel <span class="st">"X-axis"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> ylabel <span class="st">"Y-axis"</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> zlabel <span class="st">"Z-axis"</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> ticslevel 0</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> pm3d at s</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> dgrid3d 50,50</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> hidden3d</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> palette defined <span class="er">(</span><span class="ex">0</span> <span class="st">"blue"</span>, 1 <span class="st">"green"</span>, 2 <span class="st">"yellow"</span>, 3 <span class="st">"red"</span><span class="kw">)</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="ex">splot</span> <span class="pp">[-</span><span class="ss">pi:pi</span><span class="pp">]</span> <span class="pp">[-</span><span class="ss">pi:pi</span><span class="pp">]</span> sin<span class="er">(</span><span class="ex">x</span><span class="kw">)</span> <span class="ex">*</span> cos<span class="er">(</span><span class="ex">y</span><span class="kw">)</span> <span class="ex">with</span> pm3d title <span class="st">"sin(x) * cos(y)"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-elephants" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-elephants-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-elephants" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-surus" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-surus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="surface_code.jpg" class="img-fluid figure-img" data-ref-parent="fig-elephants">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-surus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Command
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-elephants" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-hanno" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-hanno-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="surface_plot.jpg" class="img-fluid figure-img" data-ref-parent="fig-elephants">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-hanno-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Plot
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elephants-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Surface Plots via Gnuplot
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="histograms" class="level3">
+<h3 class="anchored" data-anchor-id="histograms">Histograms</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> boxwidth 0.5</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> style fill solid</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> title <span class="st">"Sample Histogram"</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="ex">plot</span> <span class="st">"data.txt"</span> with boxes title <span class="st">"Frequency"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-elephants" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-elephants-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-elephants" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-surus" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-surus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="hist.jpg" class="img-fluid figure-img" data-ref-parent="fig-elephants">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-surus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Command
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-elephants" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-hanno" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-hanno-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="hist_plot.jpg" class="img-fluid figure-img" data-ref-parent="fig-elephants">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-hanno-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Plot
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elephants-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Histograms via Gnuplot
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="scatter-plots" class="level3">
+<h3 class="anchored" data-anchor-id="scatter-plots">Scatter Plots</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> title <span class="st">"Scatter Plot Example"</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> xlabel <span class="st">"X values"</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> ylabel <span class="st">"Y values"</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="ex">plot</span> <span class="st">"data.txt"</span> using 1:2 with points title <span class="st">"Data Points"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-elephants" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-elephants-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-elephants" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-surus" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-surus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="scatter.jpg" class="img-fluid figure-img" data-ref-parent="fig-elephants">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-surus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Command
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-elephants" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-hanno" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-hanno-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="scatter_plot.jpg" class="img-fluid figure-img" data-ref-parent="fig-elephants">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-hanno-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Plot
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elephants-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Scatter Plots via Gnuplot
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="multiple-plots" class="level3">
+<h3 class="anchored" data-anchor-id="multiple-plots">Multiple Plots</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> multiplot layout 2,1 title <span class="st">"Multiple Plots"</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> title <span class="st">"Sine Wave"</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="ex">plot</span> sin<span class="er">(</span><span class="ex">x</span><span class="kw">)</span> <span class="ex">with</span> lines title <span class="st">"sin(x)"</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span> title <span class="st">"Cosine Wave"</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="ex">plot</span> cos<span class="er">(</span><span class="ex">x</span><span class="kw">)</span> <span class="ex">with</span> lines title <span class="st">"cos(x)"</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="bu">unset</span> <span class="va">multiplot</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-elephants" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-elephants-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-elephants" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-surus" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-surus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="multi.jpg" class="img-fluid figure-img" data-ref-parent="fig-elephants">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-surus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Command
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-elephants" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-hanno" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-hanno-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="multi_plot.jpg" class="img-fluid figure-img" data-ref-parent="fig-elephants">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-hanno-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Plot
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elephants-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Plotting Multiple Graphs via Gnuplot
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="practical-applications-of-gnuplot-use-cases" class="level1">
+<h1>Practical Applications of Gnuplot (Use Cases)</h1>
+<p>Gnuplot is widely used across multiple fields due to its ability to handle large datasets, generate high-quality plots, and automate data visualization. Below are some real-world applications where Gnuplot is useful.</p>
+<section id="scientific-research-data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="scientific-research-data-analysis">1. Scientific Research &amp; Data Analysis</h3>
+<p>Visualizing experimental data in physics, chemistry, and biology becomes easier.</p>
+<p><strong>Example:</strong> A physicist analyzing the decay of radioactive isotopes using an exponential function plot.</p>
+<ul>
+<li>Gnuplot allows fitting experimental data to theoretical models.<br>
+</li>
+<li>Supports error bars to represent uncertainties.<br>
+</li>
+<li>Can generate publication-quality plots for research papers.</li>
+</ul>
+</section>
+<section id="engineering-simulation" class="level3">
+<h3 class="anchored" data-anchor-id="engineering-simulation">2. Engineering &amp; Simulation</h3>
+<p>Helps in visualizing mechanical, electrical, and civil engineering simulations.</p>
+<p><strong>Example:</strong> Plotting stress-strain curves for material testing in mechanical engineering.</p>
+<ul>
+<li>Gnuplot can handle large numerical datasets from simulations.<br>
+</li>
+<li>3D plotting helps visualize surfaces and contour maps in Finite Element Analysis (FEA).<br>
+</li>
+<li>Easily integrates with MATLAB, Python, and C for automated report generation.</li>
+</ul>
+</section>
+<section id="finance-stock-market-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="finance-stock-market-analysis">3. Finance &amp; Stock Market Analysis</h3>
+<p>Analyzing stock trends, market fluctuations, and economic data.</p>
+<p><strong>Example:</strong> Plotting stock prices over time and applying moving averages for trend analysis.</p>
+<ul>
+<li>Gnuplot can generate time-series plots for financial data.<br>
+</li>
+<li>Allows plotting multiple indicators like moving averages, Bollinger Bands, and RSI.<br>
+</li>
+<li>Automates daily/weekly analysis with scripting.</li>
+</ul>
+</section>
+<section id="weather-and-climate-data-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="weather-and-climate-data-visualization">4. Weather and Climate Data Visualization</h3>
+<p>Analyzing temperature, humidity, and rainfall patterns over time.</p>
+<p><strong>Example:</strong> A meteorologist visualizing climate change trends over decades.</p>
+<ul>
+<li>Can plot multi-year temperature variations.<br>
+</li>
+<li>Supports contour maps and 3D surface plots for visualizing geographical weather patterns.<br>
+</li>
+<li>Automates daily weather data plotting using scripts.</li>
+</ul>
+</section>
+<section id="network-system-performance-monitoring" class="level3">
+<h3 class="anchored" data-anchor-id="network-system-performance-monitoring">5. Network &amp; System Performance Monitoring</h3>
+<p>Monitoring CPU usage, network traffic, and server load.</p>
+<p><strong>Example:</strong> IT administrators plotting CPU usage and response times over time.</p>
+<ul>
+<li>Can read real-time data from log files and generate live-updating plots.<br>
+</li>
+<li>Helps in detecting trends and anomalies in system performance.<br>
+</li>
+<li>Automates report generation for system administrators.</li>
+</ul>
+</section>
+<section id="machine-learning-data-science" class="level3">
+<h3 class="anchored" data-anchor-id="machine-learning-data-science">6. Machine Learning &amp; Data Science</h3>
+<p>Visualizing datasets, loss functions, and training progress of ML models.</p>
+<p><strong>Example:</strong> A data scientist plotting training loss vs.&nbsp;epochs to monitor model convergence.</p>
+<ul>
+<li>Provides a quick way to visualize loss functions, accuracy curves, and confusion matrices.<br>
+</li>
+<li>Helps in feature engineering by plotting relationships between variables.<br>
+</li>
+<li>Works well with Python for automated data visualization pipelines.</li>
+</ul>
+</section>
+<section id="robotics-control-systems" class="level3">
+<h3 class="anchored" data-anchor-id="robotics-control-systems">7. Robotics &amp; Control Systems</h3>
+<p>Analyzing control system responses and sensor data by plotting step response, impulse response, and Bode plots.</p>
+<p><strong>Example:</strong> A robotics engineer plotting PID controller response over time.</p>
+<ul>
+<li>Helps in tuning control parameters by visualizing real-time sensor data.<br>
+</li>
+<li>Works well with embedded systems that log data to text files.</li>
+</ul>
+</section>
+<section id="biomedical-health-data-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="biomedical-health-data-visualization">8. Biomedical &amp; Health Data Visualization</h3>
+<p>Analyzing patient health metrics, ECG signals, and medical test results.</p>
+<p><strong>Example:</strong> A doctor plotting a patient’s blood pressure trends over time.</p>
+<ul>
+<li>Handles time-series data for health monitoring.<br>
+</li>
+<li>Supports smoothing functions for noisy biomedical data.<br>
+</li>
+<li>Helps in detecting anomalies in patient vitals.</li>
+</ul>
+</section>
+<section id="geographical-data-gis" class="level3">
+<h3 class="anchored" data-anchor-id="geographical-data-gis">9. Geographical Data &amp; GIS</h3>
+<p>Visualizing elevation maps, population distributions, and spatial data.</p>
+<p><strong>Example:</strong> A geologist plotting earthquake frequency based on geographic location.</p>
+<ul>
+<li>Can plot 3D terrain models from elevation data.<br>
+</li>
+<li>Supports contour plotting for geographic heatmaps.<br>
+</li>
+<li>Integrates with GIS tools for enhanced spatial analysis.</li>
+</ul>
+</section>
+<section id="embedded-systems-iot-data-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="embedded-systems-iot-data-visualization">10. Embedded Systems &amp; IoT Data Visualization</h3>
+<p>Monitoring IoT sensor data in smart cities and industrial automation.</p>
+<p><strong>Example:</strong> An engineer visualizing temperature readings from an IoT-based weather station.</p>
+<ul>
+<li>Continuously updates plots with real-time sensor data.<br>
+</li>
+<li>Supports lightweight visualization for resource-constrained embedded systems.<br>
+</li>
+<li>Allows automation of reports for industrial monitoring.</li>
+</ul>
+</section>
+</section>
+<section id="concluding-remarks" class="level1">
+<h1>Concluding Remarks</h1>
+<p>Gnuplot is a powerful and flexible plotting tool widely used for visualizing data and mathematical functions. It supports multiple output formats, customization options, and scripting capabilities, making it suitable for both quick plots and complex visualizations.</p>
+<p>Despite its many strengths, Gnuplot has some notable challenges and limitations. Its command-line interface and unique syntax present a steep learning curve, making it less accessible to beginners compared to modern GUI-based plotting tools. While it offers powerful customization, it lacks extensive interactive features, making it less intuitive for real-time data exploration. Additionally, Gnuplot is primarily a visualization tool and does not provide built-in advanced data analysis capabilities, often requiring users to preprocess data with other software before plotting. The community, while active, is smaller than that of newer libraries like Matplotlib or Plotly, making it harder to find support for niche problems. Lastly, while it supports multiple output formats, Gnuplot’s graphics may not always match the aesthetic appeal of more modern plotting tools unless carefully fine-tuned.</p>
+<p>Overall, Gnuplot remains a valuable tool for scientists, engineers, and analysts who need efficient and high-quality graphing capabilities in a lightweight package.</p>
+</section>
+<section id="references-further-reading" class="level1">
+<h1>References &amp; Further Reading</h1>
+<p>To further enhance your knowledge of GNU Plot, visit the following resources:</p>
+<ul>
+<li><strong>Official GNU Plot Website</strong>: <a href="http://www.gnuplot.info">http://www.gnuplot.info</a><br>
+</li>
+<li><strong>GNU Plot Documentation</strong>: <a href="http://gnuplot.info/documentation.html">http://gnuplot.info/documentation.html</a><br>
+</li>
+<li><strong>GNU Plot Quick Reference Guide</strong>: <a href="https://gnuplot.sourceforge.net">https://gnuplot.sourceforge.net</a></li>
+</ul>
+<section id="books-tutorials" class="level3">
+<h3 class="anchored" data-anchor-id="books-tutorials">Books &amp; Tutorials:</h3>
+<ol type="1">
+<li><em>Gnuplot in Action</em> by Philipp K. Janert<br>
+</li>
+<li>Online tutorials on platforms like Tutorialspoint, Overleaf, and Stack Overflow</li>
+</ol>
+</section>
+<section id="community-support" class="level3">
+<h3 class="anchored" data-anchor-id="community-support">Community &amp; Support:</h3>
+<ol type="1">
+<li>GNU Plot mailing lists<br>
+</li>
+<li>GitHub and Stack Overflow forums</li>
+</ol>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
